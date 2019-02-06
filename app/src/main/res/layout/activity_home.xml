@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/deliveryAddress"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="13dp"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/deliveryLocation"
+            android:background="@color/colorDark"
+            android:textColor="@color/colorText"
+            android:layout_gravity="start"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:lines="2"
+            android:layout_weight="1">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btnEditAddress"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorDark"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="25dp"
+            android:tint="@color/colorText"
+            android:layout_gravity="end"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editDeliveryAddress"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="13dp"
+        android:visibility="invisible"
+        android:weightSum="2">
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDark"
+            android:textColor="@color/colorText"
+            android:layout_gravity="start"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:lines="2"
+            android:breakStrategy="simple"
+            android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/btnCurrLocation"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorDark"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="25dp"
+            android:tint="@color/colorText"
+            android:layout_gravity="end"
+            android:src="@android:drawable/ic_menu_mylocation"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2"
+            android:background="@color/colorWhite">
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnItemsList"
+                android:layout_height="50dp"
+                android:text="Items List"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="2sp"
+                android:background="@color/colorDark"
+                android:textColor="@color/colorText"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Order Now"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2sp"
+                android:background="@color/colorDark"
+                android:textColor="@color/colorText"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizon"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttons"
+            android:paddingTop="3sp"
+            android:shape="line"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="3sp"
+                android:background="@color/colorWhite">
+
+                <Button
+                    android:id="@+id/btnGenStore"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:text="General Store"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:typeface="monospace"
+                    android:background="@drawable/button_border"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textScaleX=".8" />
+
+                <Button
+                    android:id="@+id/btnMilk"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:text="Milk Products"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:typeface="monospace"
+                    android:background="@drawable/button_border"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textScaleX=".8" />
+
+                <Button
+                    android:id="@+id/btnVegetable"
+                    android:layout_width="150dp"
+                    android:text="Vegetables"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="35dp"
+                    android:typeface="monospace"
+                    android:background="@drawable/button_border"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textScaleX=".8" />
+
+                <Button
+                    android:id="@+id/btnFruit"
+                    android:layout_width="150dp"
+                    android:text="Fruits"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:typeface="monospace"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_border"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textScaleX=".8" />
+
+                <Button
+                    android:id="@+id/btnService"
+                    android:layout_width="150dp"
+                    android:text="Services"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:typeface="monospace"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_border"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textScaleX=".8" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

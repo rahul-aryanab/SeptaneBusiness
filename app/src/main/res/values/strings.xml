@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Septane Business</string>
+    <string name="connect">Let\'s find you stores..</string>
+    <string name="otp_message">Waiting for the OTP code&#8230;&#8230;&#8230;</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="deliveryLocation">Fetching Delivery Location</string>
+    <string name="orderText">Place Your Order</string>
+    <string name="storeText">General Store</string>
+    <string name="groceryText">Grocery</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_address">Edit Your Delivery Address</string>
+    <string name="title_activity_grocery_tabbed">GroceryTabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
